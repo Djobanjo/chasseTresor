@@ -74,7 +74,7 @@ navigator.geolocation.watchPosition(position => {
         })
     }).addTo(map).bindPopup("Toi").openPopup();
 
-// Centrer la carte sur l'utilisateur
+
 map.setView([userLat, userLng], 18);
 
     const etape = etapes[currentStep];
