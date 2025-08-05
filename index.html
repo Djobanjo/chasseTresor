@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de piste - Campus du Moufia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <h1>🏁 Jeu de Piste - Campus du Moufia</h1>
+    <div id="map"></div>
+    <div id="info">
+        <p id="message">Autorise la géolocalisation pour commencer.</p>
+        <div id="enigme" style="display:none;">
+            <p><strong>Énigme :</strong> <span id="question"></span></p>
+            <input type="text" id="reponse" placeholder="Ta réponse ici">
+            <button onclick="valider()">Valider</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
